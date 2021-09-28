@@ -2,16 +2,16 @@ import java.util.Random;
 
 public class Matrix {
     public static final int FIELD_SIZE = 8;
-
     static Random random = new Random();
 
-    public static int[][] fillMatrix(int[][] colors, Random random) {
+
+    public static void fillMatrix(int[][] colors, Random random) {
         for (int c = 0; c < FIELD_SIZE; c++) {
             for (int r = 0; r < FIELD_SIZE; r++) {
                 colors[c][r] = random.nextInt(256);
             }
         }
-        return colors;
+//        return colors;
     }
 
     public static void printMatrix(int[][] colors) {
