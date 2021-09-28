@@ -5,7 +5,7 @@ public class Main {
         int[][] rotatedColors = new int[Matrix.FIELD_SIZE][Matrix.FIELD_SIZE];
 
         while (true) {
-            System.out.println("Приветсвую Вас! Я создала числовую матрицу размером 8х8 ячеек, заполненную случайными числами. Она перед вами:\n");
+            System.out.println("Приветствую Вас! Я создала числовую матрицу размером 8х8 ячеек, заполненную случайными числами. Она перед вами:\n");
 
             Matrix.fillMatrix(colors, Matrix.random);
             Matrix.printMatrix(colors);
