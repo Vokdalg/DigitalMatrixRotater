@@ -11,7 +11,6 @@ public class Matrix {
                 colors[c][r] = random.nextInt(256);
             }
         }
-//        return colors;
     }
 
     public static void printMatrix(int[][] colors) {
