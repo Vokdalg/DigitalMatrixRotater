@@ -30,9 +30,5 @@ public class Main {
                 System.out.println("\nНекорректный вариант ввода!\n");
             }
         }
-
-
-
-
     }
 }
