@@ -30,6 +30,7 @@ public class Main {
                     System.out.println();
                     Matrix.rotate270(colors, rotatedColors);
                     Matrix.printMatrix(rotatedColors);
+                    break;
                 default:
                     System.out.println("\nНекорректный вариант ввода!\n");
             }
