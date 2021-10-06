@@ -23,15 +23,18 @@ public class Matrix {
         System.out.println();
     }
 
-    public static void rotate90(int[][] colors, int[][] rotatedColors) {
+    public static int[][] rotate90(int[][] colors) {
+        int[][] rotatedColors = new int[Matrix.FIELD_SIZE][Matrix.FIELD_SIZE];
         for (int c = 0; c < FIELD_SIZE; c++) {
             for (int r = 0; r < FIELD_SIZE; r++) {
                 rotatedColors[c][r] = colors[FIELD_SIZE - 1 - r][c];
             }
         }
+        return rotatedColors;
     }
 
-    public static void rotate180(int[][] colors, int[][] rotatedColors) {
+    public static int[][] rotate180(int[][] colors) {
+        int[][] rotatedColors = new int[Matrix.FIELD_SIZE][Matrix.FIELD_SIZE];
         int delta = FIELD_SIZE - 1;
         for (int c = 0; c < FIELD_SIZE; c++) {
             for (int r = 0; r < FIELD_SIZE; r++) {
@@ -39,13 +42,16 @@ public class Matrix {
             }
             delta = delta - 1;
         }
+        return rotatedColors;
     }
 
-    public static void rotate270(int[][] colors, int[][] rotatedColors) {
+    public static int[][] rotate270(int[][] colors) {
+        int[][] rotatedColors = new int[Matrix.FIELD_SIZE][Matrix.FIELD_SIZE];
         for (int c = 0; c < FIELD_SIZE; c++) {
             for (int r = 0; r < FIELD_SIZE; r++) {
                 rotatedColors[c][r] = colors[r][FIELD_SIZE - 1 - c];
             }
         }
+        return rotatedColors;
     }
 }
